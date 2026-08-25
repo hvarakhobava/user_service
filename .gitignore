@@ -31,3 +31,26 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Env / secrets ###
+.env
+.env.*
+!.env.example
+
+### Logs ###
+*.log
+logs/
+
+### Local Spring profile overrides ###
+application-local.properties
+application-local.yml
+application-local.yaml
+
+### OS ###
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### Claude ###
+.claude/*
+!.claude/settings.json
