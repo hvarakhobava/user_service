@@ -1,0 +1,5 @@
+GRANT USAGE ON SCHEMA public TO app_back_end;
+
+GRANT ALL ON SCHEMA public TO app_back_end;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO app_back_end;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO app_back_end;

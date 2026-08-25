@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "WebFetch(domain:central.sonatype.com)",
+      "Bash(./mvnw -q -DskipTests compile)"
+    ]
+  }
+}

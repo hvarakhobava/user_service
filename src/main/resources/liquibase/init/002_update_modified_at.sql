@@ -1,0 +1,12 @@
+CREATE OR REPLACE FUNCTION update_modified_at()
+RETURNS TRIGGER AS
+$$
+DECLARE
+BEGIN
+  IF (OLD != NEW) THEN
+    NEW.modified_at = CURRENT_TIMESTAMP;
+  END IF;
+
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
